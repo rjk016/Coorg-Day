@@ -236,8 +236,8 @@
     <p class="event-date">Saturday, October 24, 2026 · 2:00 PM India Standard Time</p>
 
     <div class="actions">
-      <button class="share-button" id="shareButton" type="button">Share countdown ↗</button>
-      <button class="copy-button" id="copyButton" type="button">Copy page link</button>
+      <button class="share-button" id="shareButton" type="button">Share ↗</button>
+      <button class="copy-button" id="copyButton" type="button">Copy link</button>
     </div>
     <p class="status" id="status" role="status" aria-live="polite"></p>
     <footer>JeenaVS Annieversary Edition - Made for a moment that matters ✦</footer>
@@ -282,7 +282,7 @@
       elements.minutes.textContent = String(minutes).padStart(2, "0");
       elements.seconds.textContent = String(seconds).padStart(2, "0");
 
-      document.title = `${days}d ${hours}h ${minutes}m ${seconds}s | Our Special Day`;
+      document.title = `${days}d ${hours}h ${minutes}m ${seconds}s | Our Coorg Day`;
     }
 
     async function copyLink() {
@@ -298,7 +298,7 @@
     async function shareCountdown() {
       const shareData = {
         title: "Our Special Day",
-        text: "Join the countdown to Our Special Day — January 1, 2027 at midnight IST!",
+        text: "Join the countdown to Our Coorg Day!",
         url: window.location.href
       };
 
