@@ -118,6 +118,38 @@
       line-height: 1.65;
     }
 
+
+    .agenda-link-wrap {
+      margin: 24px 0 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .agenda-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 22px;
+      border: 1px solid rgba(183, 166, 255, .45);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(183, 166, 255, .12);
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .agenda-link:hover {
+      transform: translateY(-2px);
+      background: rgba(183, 166, 255, .2);
+    }
+
+    .agenda-link:focus-visible {
+      outline: 3px solid var(--accent-2);
+      outline-offset: 3px;
+    }
+
     .countdown {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -225,6 +257,11 @@
     <p class="eyebrow">A moment to look forward to</p>
     <h1>Our Coorg Day</h1>
     <p class="subtitle">Every second brings us closer. Let the countdown begin.</p>
+
+
+    <div class="agenda-link-wrap">
+      <a class="agenda-link" href="agenda.html">☷ View the Agenda</a>
+    </div>
 
     <section class="countdown" aria-label="Time remaining until Our Special Day" aria-live="off">
       <div class="unit"><span class="number" id="days">000</span><span class="label">Days</span></div>
